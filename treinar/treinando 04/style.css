@@ -78,135 +78,121 @@ nav > a:hover {
 main {
     min-width: 320px;
     max-width: 900px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     margin: auto;
     background-color: white;
-    box-shadow: 1px 2px 7px black;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.479);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main h1 {
-    color: #195A36;
+    color: var(--cor5);
     font-family: 'android';
     font-weight: normal;
     font-size: 2em;
 }
 
 main h2 {
-    color: #195A36;
+    color: var(--cor5);
     font-family: 'android';
-    background-image: linear-gradient(to right, #CAEED9, transparent);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
     font-weight: normal;
 }
 
 main p {
-    padding-top: 20px;
+    margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
     line-height: 1.7em;
-    padding-bottom: 20px;
 }
 
-p.paragrafo {
-    padding-top: 20px;
-    text-align: justify;
-    text-indent: 30px;
-    padding-bottom: 20px;
+main a {
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: var(--cor1);
+    text-decoration: none;
+    color: var(--cor5);
+    padding: 3px;
 }
 
-h2 {
-    color: #195A36;
-    font-family: 'android';
-    background-image: linear-gradient(to right, #CAEED9, #F6FCF9);
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
 }
 
-#dan {
-    text-align: center;
+a.externo::after {
+    content: '\0020\1F517';
 }
 
-#irina {
-    text-align: center;
+main strong {
+    color: var(--cor4);
 }
 
-#bugdroid {
-    text-align: center;
+main img {
+    width: 100%;
+}
+
+img.pequeno {
+    margin: auto;
+    display: block;
+    max-width: 400px;
 }
 
 #video {
-    background-color: #1A5C38;
-    text-align: center;
-    min-width: 400px;
-    max-width: 850px;
-    padding: 20px;
-    margin: auto;
-    box-shadow: 1px 2px 7px black;
+    position: relative;
+    background-color: var(--cor5);
+    margin: 0px -20px 15px -20px;
+    padding: 10px;
+    padding-bottom: 57.6%;
 }
 
-section {
-    background-color: white;
-    text-align: center;
-    min-width: 400px;
-    max-width: 850px;
-    padding: 20px;
-    margin: auto;
-    box-shadow: 1px 2px 7px black;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    margin-bottom: 15px;
+#video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}    
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 11px rgba(0, 0, 0, 0.404);
 }
 
-h3 {
-    text-align: left;
-    padding: 7px;
-    background-color: #2FA866;
+aside h3 {
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    background-color: var(--cor4);
     color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
-
-
-#listap {
-    text-align: justify;
-    text-indent: 30px; 
-    padding-bottom: 15px;  
-    font-weight: bold;
-}
-
-.d1 {
-    display: inline-block;
-    background-color: #C5EBD6;
-    border: 1px solid #C5EBD6;
-    text-align: left;
-    height: 145px;
-    width: 400px;
-    font-weight: bold;
-}
-
-.listag {
-    text-align: justify;
-    text-indent: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: bold;
+aside ul {
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+    list-style-position: inside;
 }
 
 footer {
-    background-color: #1A5C38;
-    color: rgba(255, 255, 255, 0.61);
+    background-color: var(--cor5);
     text-align: center;
+    color: white;
     padding: 7px;
+    font-size: 0.8em;
 }
 
-.branca {
+footer a {
     color: white;
     font-weight: bold;
-}
-
-span {
-    color: #207546;
-}
-
-.link {
-    color: #207546;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
 }
