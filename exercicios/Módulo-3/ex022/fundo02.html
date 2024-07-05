@@ -10,6 +10,32 @@
             font-size: 17.29px;
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        div {
+            width: 90%;
+            height: 400px;
+            border: 1px solid black;
+            background-color: gray;
+        }
+
+        #b1 {
+            background-image: url('imagens/pattern001.png');
+        }
+
+        #b2 {
+            background-image: url('imagens/pattern002.png');
+            background-repeat: repeat-x;
+        }
+
+        #b3 {
+            background-image: url('imagens/pattern003.png');
+            background-repeat: repeat-y;
+        }
+
+        #b4 {
+            background-image: url('imagens/pattern004.png');
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 <body>
@@ -25,6 +51,44 @@
         Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).
     </p>
 
-    <div></div>
+    <div id="b1">
+
+    </div>
+
+    <h2>
+        background-repeat: repeat-x;
+    </h2>
+
+    <p>
+        Repete apenas no eixo horizontal.
+    </p>
+
+    <div id="b2">
+
+    </div>
+
+    <h2>
+        background-repeat: repeat-y;
+    </h2>
+
+    <p>
+        Repete apenas no eixo vertical.
+    </p>
+
+    <div id="b3">
+
+    </div>
+
+    <h2>
+        background-repeat: no-repeat;
+    </h2>
+
+    <p>
+        Não repete em nenhum eixo. A imagem só é carregada uma única vez.
+    </p>
+
+    <div id="b4">
+
+    </div>
 </body>
 </html>
