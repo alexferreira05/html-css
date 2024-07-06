@@ -1,1 +1,71 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+}
+
+:root {
+    --cor1: #000000;
+    --cor2: #ffffff;
+    --cor3: #011201;
+    --font-1: 'Passion One', cursive;
+    --font-2: 'Verdana', sans-serif;
+    --font-3: 'Sriracha', cursive;
+}
+
+header {
+    background-color: var(--cor1);
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-1);
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 7vw;
+    padding-top: 50px;
+}
+
+header p {
+    font-family: var(--font-2);
+    color: var(--cor2);
+    padding-bottom: 50px;
+}
+
+header a {
+    color: var(--cor2);
+    font-weight: bold;
+    font-family: var(--font-2);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font-3);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+section#img1 {
+    background-image: url('../imagens/background001.jpg');
+    color: var(--cor2);
+    background-color: var(--cor1);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img1 p {
+    background-color: var(--cor3);
+    width: 43.1vw;
+}
