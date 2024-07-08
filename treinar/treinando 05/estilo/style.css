@@ -2,12 +2,13 @@
 
 * {
     margin: 0px;
+    padding: 0px;
 }
 
 :root {
     --cor1: #000000;
     --cor2: #ffffff;
-    --cor3: #011201;
+    --cor3: #01120179;
     --font-1: 'Passion One', cursive;
     --font-2: 'Verdana', sans-serif;
     --font-3: 'Sriracha', cursive;
@@ -16,12 +17,11 @@
 header {
     background-color: var(--cor1);
     text-align: center;
+    color: var(--cor2);
 }
 
 header h1 {
     font-family: var(--font-1);
-    color: var(--cor2);
-    font-weight: bold;
     font-size: 7vw;
     padding-top: 50px;
 }
@@ -57,15 +57,47 @@ section.normal {
     color: var(--cor1);
 }
 
-section#img1 {
-    background-image: url('../imagens/background001.jpg');
+section.imagem {
     color: var(--cor2);
     background-color: var(--cor1);
     background-size: cover;
     background-attachment: fixed;
 }
 
-section#img1 p {
+section.imagem p {
     background-color: var(--cor3);
     width: 43.1vw;
+    text-shadow: 1px 1px 3px black;
+}
+
+section#img1 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img2 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+section#img2 p {
+    width: 44vw;
+}
+
+footer {
+    background-color: var(--cor1);
+    text-align: center;
+    color: var(--cor2);
+    padding: 10px;
+    font-family: var(--font-2);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
