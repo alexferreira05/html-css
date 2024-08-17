@@ -1,4 +1,4 @@
-@charset "UFT-8";
+@charset "UTF-8";
 
 * {
     margin: 0px;
@@ -7,12 +7,12 @@
 }
 
 html, body {
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 
 body {
-    background: url('../imagens/fundo-madeira.jpg') center center no-repeat fixed;
+    background: url('../imagens/fundo-madeira.jpg') top center no-repeat fixed;
     background-size: cover;
     background-color: black;
 }
@@ -27,35 +27,36 @@ section#telefone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url('../imagens/frame-iphone.png') no-repeat;
-    width: 311px;
-    height: 627px;
+    background: url('../imagens/frame-phone.png') no-repeat;
+    width: 340px;
+    height: 640px;
 }
 
 iframe#tela {
     position: relative;
-    top: 81px;
+    top: 62px;
     left: 22px;
-    width: 266px;
-    height: 470px;
+    width: 296px;
+    height: 516px;
+    border-radius: 5px;
 }
 
 section#social {
     text-align: right;
-    padding: 5px;
+    padding: 10px;
 }
 
 section#social img {
     width: 50px;
     margin: 10px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
     box-sizing: border-box;
 }
 
 section#social img:hover {
     border: 2px solid burlywood;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
     transform: translate(-2px, -2px);
-    transition: transform .5s, border .2s;
+    transition: transform .5s, border .1s;
 }
