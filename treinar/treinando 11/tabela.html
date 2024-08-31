@@ -4,39 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div.alinhamento {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+            background-color: rgba(211, 211, 211, 0.664);
+        }
+
+        td.esq {
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <table>
-        <caption>Notas dos alunos do 6º ano do ensino fundamental</caption>
-        <thead>
-            <tr>
-                <th scope="col">Aluno</th>
-                <th scope="col">Português</th>
-                <th scope="col">Matemática</th>
-                <th scope="col">História</th>
-                <th scope="col">Geografia</th>
-                <th scope="col">Ciências</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ana</td>
-                <td>6,5</td>
-                <td>8</td>
-                <td>4</td>
-                <td>7</td>
-                <td>8,5</td>
-            </tr>
-            
-            <tr>
-                <td>Julia</td>
-                <td>8,5</td>
-                <td>7</td>
-                <td>9</td>
-                <td>7</td>
-                <td>7,5</td>
-            </tr>
-        </tbody>
-    </table>
+    <h1>Notas</h1>
+    <div class="alinhamento">
+        <table>
+            <caption>Notas dos alunos do 6º ano do ensino fundamental</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Aluno</th>
+                    <th scope="col">Português</th>
+                    <th scope="col">Matemática</th>
+                    <th scope="col">História</th>
+                    <th scope="col">Geografia</th>
+                    <th scope="col">Ciências</th>
+                    <th scope="col">Educação Física</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="esq">Ana</td>
+                    <td>6,5</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>8,5</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td class="esq">Bernado</td>
+                    <td>2,5</td>
+                    <td>4</td>
+                    <td>5,5</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td class="esq">Carlos</td>
+                    <td>6</td>
+                    <td>7,5</td>
+                    <td>9</td>
+                    <td>4,5</td>
+                    <td>8,5</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td class="esq">Carolina</td>
+                    <td>8</td>
+                    <td>7,5</td>
+                    <td>6,5</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>8,5</td>
+                </tr>
+                <tr>
+                    <td class="esq">João</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>8,5</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td class="esq">Julia</td>
+                    <td>8,5</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>7,5</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td class="esq">Maria</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>8,5</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>6,5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
