@@ -2,4 +2,15 @@
 
 * {
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Edição Epecial ';
+    f
+    
 }
